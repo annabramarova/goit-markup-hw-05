@@ -338,15 +338,14 @@ p {
   right: 0;
   opacity: 0.8;
 
-  display: inline-block;
+  display: block;
   content: "";
   background-color: var(--background-footer);
 }
 
-.works-text {
+.works-thumb > .works-text {
   position: absolute;
   width: 100%;
-  height: calc(70px / 2);
   bottom: 0;
   right: 0;
 
@@ -532,7 +531,8 @@ p {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.projects-link:hover .projects-overlay {
+.projects-link:hover .projects-overlay,
+.projects-link:focus .projects-overlay {
   transform: translatex(0);
 }
 
@@ -549,7 +549,8 @@ p {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-thumb:hover::before {
+.projects-thumb:hover::before,
+.projects-thumb:focus::before {
   position: absolute;
   content: "";
 
@@ -565,7 +566,8 @@ p {
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
-*/ .button {
+
+.button {
   font-family: inherit;
   cursor: pointer;
 }
