@@ -154,8 +154,6 @@ a {
 .site-nav .link.current {
   position: relative;
   color: var(--accent-color);
-
-  margin: 0;
 }
 
 .site-nav .link.current::after {
