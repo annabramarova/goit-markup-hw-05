@@ -475,6 +475,21 @@ p {
   padding: 20px 24px;
 }
 
+.product-thumb {
+  position: relative;
+}
+
+.product-thumb::before {
+  display: inline-block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+
+  position: absolute;
+  opacity: 0.9;
+}
+
 .button {
   font-family: inherit;
   cursor: pointer;
