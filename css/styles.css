@@ -149,6 +149,7 @@ a {
 .site-nav .link:focus {
   color: var(--accent-color);
   outline: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link.current {
@@ -187,6 +188,8 @@ a {
   color: var(--accent-color);
   fill: var(--accent-color);
   outline: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-icon {
@@ -437,21 +440,20 @@ p {
 .clients-link:hover {
   outline: 1px solid var(--accent-color);
   fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:focus {
   outline: 1px solid var(--accent-color);
   fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon {
   width: 106px;
   height: 60px;
-}
-
-.clients-icon:hover,
-.clients-icon:focus {
-  fill: var(--accent-color);
 }
 
 .menu {
@@ -476,8 +478,6 @@ p {
 
 .projects-link {
   display: block;
-
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-link:hover,
@@ -485,6 +485,8 @@ p {
   outline: none;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-list .item {
@@ -548,7 +550,8 @@ p {
   opacity: 0.9;
 
   transform: translatey(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-thumb:hover::before,
@@ -593,6 +596,7 @@ p {
 .button-main:hover,
 .button-main:focus {
   background-color: var(--main-button-hover);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portfolio {
@@ -617,6 +621,9 @@ p {
   color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portfolio:focus {
@@ -660,6 +667,7 @@ p {
 .footer-list .link:focus {
   color: var(--accent-color);
   outline: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media-text {
@@ -725,6 +733,8 @@ p {
   background-color: var(--accent-color);
   outline: none;
   fill: var(--white-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media-link {
@@ -741,6 +751,7 @@ p {
 .media-link:focus {
   background-color: var(--accent-color);
   outline: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
@@ -753,7 +764,8 @@ p {
   background-color: var(--backdrop-color);
 
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
