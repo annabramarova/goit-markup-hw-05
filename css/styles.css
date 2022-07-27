@@ -140,6 +140,8 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .item:not(:last-child) {
@@ -150,7 +152,6 @@ a {
 .site-nav .link:focus {
   color: var(--accent-color);
   outline: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link.current {
@@ -182,6 +183,8 @@ a {
 
 .contacts-link {
   display: block;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
@@ -189,8 +192,6 @@ a {
   color: var(--accent-color);
   fill: var(--accent-color);
   outline: none;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-icon {
@@ -430,22 +431,19 @@ p {
 
   fill: var(--clients-gray);
   outline: 1px solid var(--clients-gray);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover {
   outline: 1px solid var(--accent-color);
   fill: var(--accent-color);
-
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:focus {
   outline: 1px solid var(--accent-color);
   fill: var(--accent-color);
-
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu {
@@ -470,6 +468,8 @@ p {
 
 .projects-link {
   display: block;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-link:hover,
@@ -477,8 +477,6 @@ p {
   outline: none;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-list .item {
@@ -583,12 +581,13 @@ p {
 
   background-color: var(--accent-color);
   color: var(--white-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-main:hover,
 .button-main:focus {
   background-color: var(--main-button-hover);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portfolio {
@@ -605,6 +604,10 @@ p {
 
   background-color: var(--button-background);
   color: var(--title-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portfolio:hover,
@@ -613,10 +616,6 @@ p {
   color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portfolio:focus {
@@ -646,6 +645,8 @@ p {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--footer-contacts);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-list {
@@ -660,8 +661,6 @@ p {
 .footer-list .link:focus {
   color: var(--accent-color);
   outline: none;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media-text {
@@ -709,6 +708,9 @@ p {
   width: 44px;
   height: 44px;
   fill: var(--clients-gray);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon {
@@ -720,8 +722,6 @@ p {
   background-color: var(--accent-color);
   outline: none;
   fill: var(--white-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media-link {
@@ -732,13 +732,14 @@ p {
   height: 44px;
   border-radius: 50%;
   background-color: var(--background-footer-icons);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media-link:hover,
 .media-link:focus {
   background-color: var(--accent-color);
   outline: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
